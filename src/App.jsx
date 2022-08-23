@@ -1,7 +1,15 @@
-import "./App.css";
+import "./style.sass";
+
+import Navbar from "./components/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  );
 }
 
 export default App;
