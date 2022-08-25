@@ -8,7 +8,6 @@ function Details() {
   const { char_id } = useParams();
 
   useEffect(() => {
-    console.log("Hey");
     axios(`https://www.breakingbadapi.com/api/characters/${char_id}`)
       .then((res) => res.data)
       .then((data) => setChar(data[0]));
